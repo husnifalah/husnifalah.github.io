@@ -1,0 +1,438 @@
+/* Gantilah dengan seluruh CSS yang Anda sediakan */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #F99417;
+    --primary-color-dark: #e08e29;
+    --secondary-color: #a855f7;
+    --text-dark: #3b3936;
+    --text-light: #E5DFDF;
+    --extra-light: #faf5ff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+}
+
+.nav__conten {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__conten .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: .3s;
+}
+
+.nav__conten .logo a:hover {
+    color: var(--primary-color-dark);
+}
+
+nav .checkbok {
+    display: none;    
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbok i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    color: var(--primary-color-dark);
+}
+/* CSS untuk transisi halus */
+#home, #about, #skills, #portofolio, #kontak {
+  transition: scroll-behavior 0.5s ease-in-out;
+}
+.section {
+    background-color: var(--extra-light);
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+ 
+  
+  .section_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .subtitle {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .title span {
+    color: var(--secondary-color);
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .action_btns {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: 1px solid var(--primary-color-dark);
+    cursor: pointer;
+  }
+  
+  button.hire_me {
+    background-color: var(--primary-color);
+  }
+  
+  button.hire_me:hover {
+    background-color: var(--primary-color-dark);
+    color: #faf5ff;
+  }
+  
+  button.portofolio {
+    background-color: var(--text-light);
+    color: var(--text-dark);
+  }
+  
+  button.portofolio:hover{
+    background-color: var(--primary-color-dark);
+    color: var(--extra-light);
+  }
+  
+  .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  img {
+    margin-top: 2rem;
+    border-radius: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+/*  */
+.about {
+  overflow: hidden;
+}
+
+.about_title {
+  text-align: center; /* Mengatur teks ke tengah */
+  margin-top: 0; /* Menghapus margin atas bawaan */
+  margin-bottom: 2rem;
+}
+
+/* Contoh styling tambahan */
+.abot_text {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.section_about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  /* Anda juga bisa mencoba 'display: grid;' jika ingin menggunakan Grid Layout */
+}
+
+.image2, .content2 {
+  width: 40%;
+}
+
+/* Contoh styling tambahan */
+.abot_text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.skills {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Gaya CSS untuk judul keterampilan */
+.skills_title {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Gaya CSS untuk daftar keterampilan */
+.skills_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Gaya CSS untuk setiap keterampilan */
+.skill {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Gaya CSS untuk teks dalam keterampilan */
+.skill span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Gaya CSS untuk ikon */
+.skill i {
+  font-size: 36px;
+  margin-top: 10px;
+}
+/* Gaya CSS untuk latar belakang kotak dengan tiga warna berbeda */
+.skill:nth-child(3n+1) {
+  background-color: #ff7f50; /* Warna oranye */
+  color: var(--text-light);
+}
+
+.skill:nth-child(3n+2) {
+  background-color: #87ceeb; /* Warna biru muda */
+  color: var(--text-dark);
+}
+
+.skill:nth-child(3n) {
+  background-color: #90ee90; /* Warna hijau muda */
+  color: var(--text-dark);
+}
+.skill:hover {
+  background-color: #e08e29; /* Warna latar belakang saat hover */
+  color: var(--text-light); /* Warna teks saat hover */
+  transform: scale(1.05);
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the image inside the portfolio */
+.portfolio-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/* Styling the first portfolio text */
+.portfolio-text {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 1rem;
+}
+
+.portfolio-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.portfolio-description {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Styling the second portfolio text */
+.portfolio-text2 {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-text2 .portfolio-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.portfolio-text2 .portfolio-description {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Adding margin to create a gap */
+.portfolio + .contact {
+  margin-top: 1rem;
+}
+
+/* Styling for the Contact section */
+.contact {
+  background-color: var(--primary-color);
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff; /* Text color for better visibility on the blue background */
+}
+
+
+
+
+
+
+@media (width < 750px) {
+    
+    nav .checkbok {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: var(--extra-light);
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+    }
+
+    .section_container {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+    
+      .content {
+        text-align: center;
+      }
+    
+      .image {
+        text-align: center;
+      }
+      .section_about {
+        flex-direction: column; /* Ubah tata letak menjadi vertikal */
+    }
+
+    .image2, .content2 {
+        width: 100%; /* Penuh lebar pada layar kecil */
+        margin: 0; /* Hapus margin jika tidak diperlukan */
+        text-align: center;
+    }
+    .content2{
+      text-align: center;
+    }
+    .skill:hover {
+      background-color: #e08e29; /* Warna latar belakang saat hover */
+      color: var(--text-light); /* Warna teks saat hover */
+      transform: scale(1.05);
+    }
+    .portfolio {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .portfolio-image {
+      margin: 0 0 20px 0;
+    }
+  
+    .portfolio-text, .portfolio-text2 {
+      margin: 0;
+      padding: 15px;
+    }
+  
+    .portfolio-text2 {
+      margin-top: 20px;
+    }
+    
+}

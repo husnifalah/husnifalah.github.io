@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Husni Falah~Portofolio</title>
+    
+</head>
+<body>
+    <nav>
+        <div class="nav__conten">
+            <div class="logo"><a href="#">Husni Falah</a></div>
+            <label for="check" class="checkbok">
+                <i class="ri-menu-fill"></i>
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#kontak">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section" id="home">
+        <div class="section_container">
+            <div class="content"> <!-- Elemen content -->
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Husni Falah</span> Web Developer
+                </h1>
+                <p class="description">
+                    Saya adalah fresh graduate dari Telkom University Bandung
+                    jurusan Diploma Sistem Informasi dengan IPK 3.6
+                </p>
+                <div class="action_btns">
+                    <button class="hire_me" href="#portofolio">Hire Me</button>
+                    <button class="portofolio">Portofolio</button>
+                </div>
+            </div>
+            <div class="image" > 
+                <!-- Elemen image -->
+                <img src="assets/Foto1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="about" id="about">
+        <div class="section_about">
+            <div class="image2" data-aos="fade-right"  data-aos-duration="600">
+                <img src="assets/foto2.jpg" alt="" >
+            </div>
+            <div class="content2" data-aos="fade-left"  data-aos-duration="600">
+                <h1 class="about_title">About Me</h1>
+                <p class="abot_text">
+                    Saya adalah lulusan dari Telkom University Bandung jurusan Diploma Sistem Informasi. saat ini saya berusia 21 tahun dan berdomisili di Pati, Jawa Tengah. Saya adalah seseorang yang memiliki rasa ingin tahu yang tinggi, disiplin, dan mampu bekerja dalam tim.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="section_skills">
+            <h1 class="skills_title">Skills Relevant</h1>
+            <div class="skills_list">
+                <div class="skill"  >
+                    <span class="border" >HTML</span>
+                    <i class="ri-html5-fill"></i>
+                </div>
+                <div class="skill">
+                    <span class="border1">CSS</span>
+                    <i class="ri-css3-fill"></i>
+                </div>
+                <div class="skill">
+                    <span class="border2">Innovation</span>
+                    <i class="ri-lightbulb-line"></i>
+                </div>
+                <div class="skill">
+                    <span class="border3">Microsoft</span>
+                    <i class="ri-windows-fill"></i>
+                </div>
+                <div class="skill">
+                    <span class="border4">PHP</span>
+                    <i class="fab fa-php"></i>
+                </div>
+                <div class="skill">
+                    <span class="border5">Teamwork</span>
+                    <i class="ri-team-line"></i>
+                </div>
+                <!-- Anda bisa menambahkan keterampilan lainnya di sini -->
+            </div>
+        </div>
+    </div>
+    <div class="portfolio" id="portofolio">
+        <div class="portfolio-image">
+            <img src="assets/foto3.png" alt=" Gambar Portofolio">
+        </div>
+        <div class="portfolio-text" data-aos="zoom-in" data-aos-duration="600">
+            <h1 class="portfolio-title">Aplikasi SPBE </h1>
+            <p class="portfolio-description">Dinas Kominfo Kab. Pati
+                Membantu mengembangkan aplikasi SPBE dan membantu membuat atau menyusun dokumen proses bisnis.</p>
+        </div>
+        <div class="portfolio-text2" data-aos="zoom-in" data-aos-duration="600">
+            <h1 class="portfolio-title">Aplikasi Bahan Baku</h1>
+            <p class="portfolio-description">Proyek Akhir 
+                Membuat aplikasi pengadaan bahan baku dengan framwork codeigneter 3..</p>
+        </div>
+        
+    </div>
+    <div class="contact" id="kontak">
+        <div class="contact-header">
+            <h1 class="contact-title">Hubungi Saya</h1>
+            <p class="contact-description">Saya senang mendengar dari Anda. Silakan hubungi saya melalui salah satu cara di bawah ini.</p>
+        </div>
+        <div class="contact-info">
+            <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <p>Email: <a href="mailto:email@example.com">husnifalah15@gmail.com</a></p>
+            </div>
+            <div class="contact-method">
+                <i class="fas fa-phone"></i>
+                <p>Telepon: <a href="tel:+1234567890">0895397156382</a></p>
+            </div>
+            <div class="contact-method">
+                <i class="fas fa-map-marker"></i>
+                <p>Alamat: Ds.Sidokerto RT 2 / RW 1 Pati, Jawa Tengah</p>
+            </div>
+        </div>
+    </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href').substring(1); // Dapatkan ID target tanpa tanda "#" di depannya
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
